@@ -33,6 +33,7 @@ function start_game() {
     cells.forEach((cell) => {
       cell.addEventListener("click", player_move);
       cell.innerHTML = "";
+      cell.classList.add("hover");
     });
   });
 }
@@ -40,6 +41,7 @@ function start_game() {
 function player_move() {
   this.innerHTML = whose_turn;
   this.removeEventListener("click", player_move);
+  this.classList.remove("hover");
   whose_turn = whose_turn == "X" ? "O" : "X";
   status_text.innerHTML = `${whose_turn}'s turn`;
   validation();
@@ -81,5 +83,8 @@ function end() {
   } else {
     status_text.innerHTML = "Draw!";
   }
-  cells.forEach((cell) => cell.removeEventListener("click", player_move));
+  cells.forEach((cell) => {
+    cell.removeEventListener("click", player_move);
+    cell.classList.remove("hover");
+  });
 }

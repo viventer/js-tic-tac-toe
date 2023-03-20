@@ -30,6 +30,16 @@ p {
   width: 70px;
   height: 70px;
   border: 2px solid #00f7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.hover:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer {
@@ -52,12 +62,5 @@ p {
   background-color: rgba(0, 0, 0, 0);
   color: white;
   border: 2px solid #00f7ff;
-}
-
-.cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  font-weight: 700;
+  transition: all 0.1s ease-in-out;
 }
