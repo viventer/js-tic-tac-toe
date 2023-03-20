@@ -1,0 +1,63 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-top: 50px;
+}
+
+.header {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #00f7ff;
+}
+
+.footer {
+  font-size: 28px;
+  margin-top: 15px;
+  font-weight: 700;
+  display: flex;
+  font-weight: 500;
+}
+
+.status-text {
+  flex: 1;
+  text-align: center;
+}
+
+.restart-button {
+  padding: 4px 5px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: 2px solid #00f7ff;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+}
